@@ -3,7 +3,7 @@ import logging
 
 def send_data():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_address = ('localhost', 45000)
+    server_address = ('172.20.0.5', 45000)
     logging.warning(f"opening socket {server_address}")
     sock.connect(server_address)
 
